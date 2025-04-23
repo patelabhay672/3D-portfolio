@@ -9,7 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -61,11 +64,10 @@
         url="https://prod.spline.design/mmKHrxjpeRBTAMFQ/scene.splinecode"
       ></spline-viewer>
     </main>
-<!-- About section -->
+    <!-- About section -->
     <section class="about-section">
       <h1 class="about-title">About Me</h1>
       <div class="bento-grid">
-
         <div class="card intro">
           <h2 class="card-title">HI there,I'M Abhay</h2>
           <p class="card-text">
@@ -106,16 +108,15 @@
             enim itaque.
           </p>
           <img src="images/gradient3&4.png" alt="" class="background-img" />
-          <button class="btn"><i class='bx bx-send'></i>  CONTACT ME</button>
+          <button class="btn"><i class="bx bx-send"></i> CONTACT ME</button>
         </div>
 
         <div class="card passion">
           <h2 class="card-title">PASSION</h2>
           <p class="card-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptatibus, cumque, voluptates, quia quisquam voluptatibus
-            cumque, voluptates, quia quisquam voluptatibus cumque, voluptates,
-            quia
+            voluptatibus, cumque, voluptates, quia quisquam voluptatibus cumque,
+            voluptates, quia quisquam voluptatibus cumque, voluptates, quia
           </p>
           <img src="images/gradient 2.png" alt="" class="background-img" />
         </div>
@@ -126,9 +127,61 @@
 
     <section class="project-section">
       <h3>My Project</h3>
+      <div
+        class="slider"
+        style="--width: 60rem; --height: 40rem; --quantity: 4"
+      >
+        <div class="list">
+          <div class="item" style="--position: 1">
+            <video src="video/project-1.mp4" id="project1"></video>
+          </div>
+          <div class="item" style="--position: 1">
+            <video src="video/project-2.mp4" id="project2"></video>
+          </div>
+          <div class="item" style="--position: 1">
+            <video src="video/project-3.mp4" id="project3"></video>
+          </div>
+          <div class="item" style="--position: 1">
+            <video src="video/project-4.mp4" id="project4"></video>
+          </div>
+        </div>
+      </div>
     </section>
+
+    <!-- contact section  -->
+
+    <section class="contact-section">
+      <h1>Get In Touch</h1>
+      <p>Have a project in mind or just want to say hello? Drop me a message</p>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Contact info</h3>
+          <p><strong>Email</strong><br />hello@example.com</p>
+          <p><strong>Phone</strong><br />+1 (234) 567-890</p>
+          <p><strong>Location</strong><br />San Francisco, CA</p>
+          <h4>Contacy with me</h4>
+          <div class="social-buttons">
+            <button>GitHub</button>
+            <button>Linkedin</button>
+            <button>Twitter</button>
+          </div>
+        </div>
+
+        <form class="contact-form">
+          <h3>Send Message</h3>
+          <input type="text" placeholder="Your name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="subject" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
     <script
       type="module"
+      id="project1"
       src="https://unpkg.com/@splinetool/viewer@1.9.82/build/spline-viewer.js"
     ></script>
 
