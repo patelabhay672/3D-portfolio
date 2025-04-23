@@ -176,3 +176,39 @@ main h1 {
     cursor: pointer;
     animation: computer 10s ease-in-out infinite;
 }
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .left-content,
+  .right-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  spline-viewer {
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .contact-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+
+  .social-icons a {
+    font-size: 1.3rem;
+  }
+
+  spline-viewer {
+    min-height: 250px;
+  }
+}
