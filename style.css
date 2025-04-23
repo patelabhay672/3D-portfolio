@@ -275,3 +275,24 @@ main h1 {
     height: 150%;
     mix-blend-mode: lighten;
 }
+.bento-grid .skills-group{
+    position: absolute;
+    bottom: 5%;
+    left: 15%;
+    width: 70%;
+}
+.bento-grid .btn{
+    position: absolute;
+    bottom: 10%;
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(124,233,230,0.1);
+    color:#76b0ab;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s ease;   
+}
+.bento-grid .btn:hover{
+    background-color: rgba(214, 244, 252, 0.683);
+    color: #000000;
+}
