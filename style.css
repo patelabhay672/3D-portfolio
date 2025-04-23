@@ -58,13 +58,13 @@ main {
 .title-section {
     margin-top: 3rem;
 }
-
+/* 
 main h1 {
     z-index: 1;
     position: absolute;
     margin-top: 450px;
     margin-left: 1200px;
-}
+} */
 
 .social-icons {
     margin-top: 2rem;
