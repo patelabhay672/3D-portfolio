@@ -189,7 +189,7 @@ main h1 {
 .about-title {
     margin-bottom: 5%;
     font-size: 5rem;
-    background-image: linear-gradient(rgb(133, 133, 133), rgb(255, 255, 255));
+    background-image: linear-gradient(rgb(216, 212, 212), rgb(255, 255, 255));
     color: transparent;
     background-clip: text;
 }
@@ -206,10 +206,39 @@ main h1 {
 }
 
 .card {
-    background: linear-gradient(145deg, rgba(0, 0, 0, 014), rgba(0, 0, 0, 0.2));
-    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, rgba(0, 0, 0, 014), rgba(0, 0, 0, 0.7));
+    border: 1px solid rgba(255,255,255,0.1);
     padding: 2rem;
+    border-radius: 24px;
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+}
+
+/* card specific areas */
+
+.intro{grid-area: intro;min-height: 300px;}
+.tech{grid-area: tech;min-height: 450px;}
+.passion{grid-area: passion;min-height: 220px;}
+.time{grid-area: time;min-height: 220px;}
+
+/* hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    border-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* spotlight effect */
+.card::before {
+    content: "";
+    position: absolute;
+   inset: 0 0 0 0;
+    background: radial-gradient(circle at var(--x) var(--y), rgba(124,233,230,0.1),transparent 40%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+.card:hover::before {
+    opacity: 1;
 }
