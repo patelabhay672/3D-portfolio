@@ -22,3 +22,16 @@ videoList.forEach(function(video) {
         video.pause();
     });
 })
+
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    document.getElementById('successMessage').style.display = 'block'; // Show the success message
+
+    this.reset(); // Reset the form fields
+
+    setTimeout(function() {
+        document.getElementById('successMessage').style.display = 'none'; // Hide the success message after 3 seconds
+    }, 3000);
+});
