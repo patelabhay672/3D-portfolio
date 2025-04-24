@@ -1,7 +1,6 @@
 document.querySelectorAll('.card').forEach(card => {
     card.addEventListener('mousemove', e => {
         const rect=card.getBoundingClientRect();
-        //update css variable for the spotlight effect
         card.style.setProperty('--x', `${e.clientX - rect.left}px`);
         card.style.setProperty('--y', `${e.clientY - rect.top}px`);
     }
@@ -25,13 +24,12 @@ videoList.forEach(function(video) {
 
 
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); 
 
-    document.getElementById('successMessage').style.display = 'block'; // Show the success message
+    document.getElementById('successMessage').style.display = 'block'; 
 
-    this.reset(); // Reset the form fields
-
+    this.reset();
     setTimeout(function() {
-        document.getElementById('successMessage').style.display = 'none'; // Hide the success message after 3 seconds
-    }, 3000);
+        document.getElementById('successMessage').style.display = 'none';
+    }, 5000);
 });
