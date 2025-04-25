@@ -33,3 +33,11 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         document.getElementById('successMessage').style.display = 'none';
     }, 5000);
 });
+function isMobileDevice() {
+    return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+}
+
+if (isMobileDevice()) {
+    document.getElementById('mobile-warning').style.display = 'flex';
+    document.body.style.overflow = 'hidden'; // Scroll disable
+}
