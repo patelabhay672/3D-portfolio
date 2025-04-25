@@ -772,8 +772,14 @@ body {
 
     }
 
+    .model-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 1rem;
+    }
     .project-section {
-        margin-top: 40rem;
+        margin-top: 60rem;
     }
 
     .project-section h3 {
@@ -822,6 +828,13 @@ body {
 
     .location p {
         font-size: 1rem;
+    }
+    .project-section{
+        margin-top: 60rem;
+    }
+    .project-section h3 {
+        margin-bottom: 5%;
+        font-size: 4rem;
     }
 
     .contact-btn {
