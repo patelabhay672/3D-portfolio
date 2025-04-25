@@ -803,6 +803,9 @@ body {
     .contact-section {
         margin-top: 0;
     }
+    .about-section .btn{
+        display: none;
+    }
 
     .box-icon {
         display: none;
@@ -825,7 +828,10 @@ body {
     .logo {
         font-size: 6rem;
     }
-
+    .about-section .btn{
+        display: none;
+    }
+    
     .location p {
         font-size: 1rem;
     }
